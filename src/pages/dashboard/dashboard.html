@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Dashboard</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+    <ion-card (click)="goNews()">
+        <img src="images/dashboard-news.png"/>
+        <div class="card-title">Novedades</div>
+        <div class="card-subtitle">Últimas noticias</div>
+    </ion-card>
+
+    <ion-card (click)="goOffices()">
+        <img src="images/dashboard-offices.png"/>
+        <div class="card-title">Sucursales</div>
+    </ion-card>
+</ion-content>

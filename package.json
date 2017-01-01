@@ -36,7 +36,8 @@
     "cordova-plugin-statusbar",
     "cordova-plugin-splashscreen",
     "ionic-plugin-keyboard",
-    "cordova-plugin-device"
+    "cordova-plugin-device",
+    "cordova-plugin-googlemaps"
   ],
   "cordovaPlatforms": [],
   "description": "sidemenu: An Ionic project"

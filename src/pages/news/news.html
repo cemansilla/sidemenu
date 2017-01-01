@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Novedades</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-card *ngFor="let new of news">
+        <img src="images/news/{{new.img}}"/>
+        <ion-card-content>
+            <ion-card-title>{{new.title}}</ion-card-title>
+            <p>{{new.description}}</p>
+        </ion-card-content>
+
+        <ion-row no-padding>
+            <ion-col>
+                <button ion-button clear small color="danger" icon-left>
+                    <ion-icon name='star'></ion-icon>
+                    Favorito
+                </button>
+            </ion-col>
+
+            <ion-col text-right>
+                <button ion-button clear small color="danger" icon-left>
+                    <ion-icon name='share'></ion-icon>
+                    Compartir
+                </button>
+            </ion-col>
+        </ion-row>
+    </ion-card>
+</ion-content>

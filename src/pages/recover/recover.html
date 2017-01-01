@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Recuperar contraseña</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <p>Ingresa la dirección de correo electrónico con la que te registraste y te enviaremos las instrucciones para poder ingresar.</p>
+
+    <form [formGroup]="recover" (ngSubmit)="doRecover()">
+        <ion-item>
+            <ion-label>Email</ion-label>
+            <ion-input type="email" formControlName="email" [(ngModel)]="email"></ion-input>
+        </ion-item>
+
+        <button ion-button type="submit" [disabled]="!recover.valid">Restaurar contraseña</button>
+    </form>
+ 
+</ion-content>
